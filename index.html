@@ -150,7 +150,7 @@
             <h1><a href="{{ post.link }}">{{ post.title }}</a></h1>
             <p><a href="mailto:{{ post.author.email }}">{{ post.author.name }}</a> - <span style="color: #c2c2c2;">{{ post.date }}</span></p>
             <p>
-              {{ post.body }} <span style="font-size: 1.2em;"><strong><a href="{{ post.link }}"> Read more...</a></strong></span>
+              {{ post.body }} <span style="font-size: 1.2em;"><strong><a href="http://josezamudio.herokuapp.com/{{ post.link }}"> Read more...</a></strong></span>
             </p>
             <p><span ng-repeat="tag in post.tags" class="tag">&nbsp;<i class="fa fa-circle"></i> <a href="http://josezamudio.herokuapp.com/tag/{{tag}}"> {{ tag }}</a> </span></p>
           </div>
