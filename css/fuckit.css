@@ -1,0 +1,215 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #7b6771;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #7b6771;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  background-color: #7b6771;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+  background-color: #7b6771;
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+#intro {
+
+}
+
+.name-bar {
+  margin-top: 30%;
+  margin-bottom: 5%;
+}
+
+.name-bar input {
+  width: 50%;
+  background: #fff;
+  color: #7b6771;
+  height: 40px;
+  text-align: center;
+  border-top: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+  border-left: 1px solid #c2c2c2;
+  border-bottom: 5px solid #c2c2c2;
+}
+
+.intro-name {
+  background: #fff;
+  color: #7b6771;
+  border: 1px solid #c2c2c2;
+}
+
+.intro-name h1 {
+  margin: 0;
+  padding: 8px;
+}
+
+.intro-title {
+  background: #c2c2c2;
+  color: #fff;
+  margin-bottom: 3%;
+}
+
+.intro-title h4 {
+  margin: 0px;
+  padding: 3px;
+}
+
+.intro-social {
+  margin-bottom: 60%;
+  color: #fff;
+  font-size: 1.8em;
+}
+
+.intro-social a {
+  color: #fff;
+  margin-right: 15px;
+}
+
+.intro-social a:hover {
+  color: #7b6771;
+}
+
+#portfolio {
+  box-shadow: 0 -5px 25px rgba(0,0,0,.1);
+  background: #fff;
+}
+
+#portfolio .profile-pic {
+  margin-top: -70px;
+}
+
+#portfolio .profile-pic img {
+  height: 150px;
+  widows: auto;
+  border: 5px solid #fff;
+  box-shadow: 0 2px 0px #c2c2c2;
+}
+
+#portfolio .title-header {
+  margin-top: 5%;
+}
+
+#portfolio .title-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+#portfolio .title-header h3 {
+  font-size: 1.4em;
+  color: #c2c2c2;
+  margin-top: 5px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#portfolio .portfolio-options {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#portfolio .square {
+  margin-top: .5%;
+  margin-bottom: .5%;
+  padding-right: .5%;
+  padding-left: .5%
+}
+
+#portfolio .portfolio-item {
+  color: #fff;
+  background: #000;
+  padding: 20%;
+  background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url();
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#portfolio .portfolio-item h1 {
+  font-size: 1.5em;
+}
+
+#portfolio .portfolio-item h3 {
+  font-size: 1.2em;
+}
+
+#portfolio .portfolio-item h5 {
+  font-size: 1em;
+}
+
+#experience {
+  background: #fff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#experience .title-header {
+
+}
+
+#experience .title-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+#experience .title-header h3 {
+  font-size: 1.4em;
+  color: #c2c2c2;
+  margin-top: 5px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#ad {
+  background: #000;
+  padding: 55px 0px;
+}
+
+#ad h1 {
+  color: #fff;
+  margin-bottom: 3%;
+}
+
+#ad button {
+  color: #777;
+  font-size: 1.5em;
+  background: rgba(0,0,0,0);
+  border: 1px solid #777;
+  border-radius: 3px;
+  padding: 15px 20px;
+}
+
+#ad button:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+#blog {
+  background: #fff;
+  margin-bottom: 5%;
+}
+
+#blog .title-header {
+  margin-top: 5%;
+}
+
+#blog .title-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+#blog .title-header h3 {
+  font-size: 1.4em;
+  color: #c2c2c2;
+  margin-top: 5px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
