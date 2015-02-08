@@ -157,21 +157,40 @@ a:hover {
 */
 
 #portfolio .portfolio-item h1 {
+  padding-top: 10px;
+  margin: 0px;
+  background: rgba(0,0,0,.4);
   font-size: 1.5em;
 }
 
 #portfolio .portfolio-item h3 {
+  margin: 0px;
+  padding-top: 8px;
+  background: rgba(0,0,0,.4);
   font-size: 1.2em;
 }
 
 #portfolio .portfolio-item h5 {
-  font-size: 1.4vmin;
+  margin: 0px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  background: rgba(0,0,0,.4);
+  font-size: 1em;
+}
+
+#portfolio .portfolio-item h5 a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#portfolio .portfolio-item h5 a:hover {
+  color: #c2c2c2;
 }
 
 #experience {
   background: #fff;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #experience .title-header {
@@ -226,7 +245,7 @@ a:hover {
 
 #blog {
   background: #fff;
-  margin-bottom: 5%;
+  padding-bottom: 4%;
 }
 
 #blog .title-header {
@@ -242,6 +261,29 @@ a:hover {
   font-size: 1.4em;
   color: #c2c2c2;
   margin-top: 5px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #e0e0e0;
+}
+
+#blog p {
+  margin-bottom: 15px;
+}
+
+#blog .tag {
+  background: #337ab7;
+  padding: 3px 5px;
+  margin-right: 3px;
+  border-radius: 5px;
+  font-size: .9em;
+  cursor: pointer;
+}
+
+#blog .fa-circle {
+  color: #fff;
+  font-size: .55em;
+  margin-right: 2px;
+}
+
+#blog .tag a {
+  color: #fff;
 }

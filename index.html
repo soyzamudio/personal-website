@@ -39,9 +39,10 @@
             <li class="active"><a href="mailto:jose@josezamudio.me">HIRE ME</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#" class="intro-scroll">Home</a></li>
+            <li><a href="#" class="portfolio-scroll">Projects</a></li>
+            <li><a href="#" class="experience-scroll">Experience</a></li>
+            <li><a href="" class="blog-scroll">Blog</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -149,9 +150,9 @@
             <h1><a href="{{ post.link }}">{{ post.title }}</a></h1>
             <p><a href="mailto:{{ post.author.email }}">{{ post.author.name }}</a> - <span style="color: #c2c2c2;">{{ post.date }}</span></p>
             <p>
-              {{ post.body }} <span><a href="{{ post.link }}"> Read more...</a></span>
+              {{ post.body }} <span style="font-size: 1.2em;"><strong><a href="{{ post.link }}"> Read more...</a></strong></span>
             </p>
-            <p>Tags: <span ng-repeat="tag in post.tags">&nbsp;<a href="http://josezamudio.herokuapp.com/tag/{{tag}}">{{ tag }}</a> </span></p>
+            <p><span ng-repeat="tag in post.tags" class="tag">&nbsp;<i class="fa fa-circle"></i> <a href="http://josezamudio.herokuapp.com/tag/{{tag}}"> {{ tag }}</a> </span></p>
           </div>
         </div>
       </div>
