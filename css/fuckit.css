@@ -120,14 +120,29 @@ a:hover {
   margin-top: .5%;
   margin-bottom: .5%;
   padding-right: .5%;
-  padding-left: .5%
+  padding-left: .5%;
+
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+}
+
+#portfolio .square:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s; /* Safari */
+  z-index: 1;
 }
 
 #portfolio .portfolio-item {
   color: #fff;
   background: #000;
   padding: 20%;
-  opacity: 0.5;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -135,9 +150,11 @@ a:hover {
   background-size: cover;
 }
 
+/*
 #portfolio .portfolio-item:hover {
   opacity: 1.0;
 }
+*/
 
 #portfolio .portfolio-item h1 {
   font-size: 1.5em;
