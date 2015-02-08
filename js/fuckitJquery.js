@@ -11,8 +11,4 @@ $(document).ready(function() {
   $('.intro-items').addClass('animated fadeIn');
   $(".navbar").hide();
 
-  $('.hire-me').on('click', function() {
-    $('#myModal').modal('show');
-  })
-
 });

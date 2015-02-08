@@ -116,6 +116,7 @@ a:hover {
 }
 
 #portfolio .square {
+  cursor: pointer;
   margin-top: .5%;
   margin-bottom: .5%;
   padding-right: .5%;
@@ -126,11 +127,16 @@ a:hover {
   color: #fff;
   background: #000;
   padding: 20%;
-  background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url();
+  opacity: 0.5;
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+#portfolio .portfolio-item:hover {
+  opacity: 1.0;
 }
 
 #portfolio .portfolio-item h1 {
@@ -142,7 +148,7 @@ a:hover {
 }
 
 #portfolio .portfolio-item h5 {
-  font-size: 1em;
+  font-size: 1.4vmin;
 }
 
 #experience {
@@ -190,6 +196,15 @@ a:hover {
 #ad button:hover {
   color: #fff;
   border: 1px solid #fff;
+}
+
+#ad a {
+  color: #777;
+}
+
+#ad a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 #blog {
