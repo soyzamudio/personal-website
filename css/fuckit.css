@@ -145,6 +145,7 @@ a:hover {
 }
 
 #portfolio .portfolio-item {
+  border-radius: 5px;
   color: #fff;
   background: #000;
   padding: 20%;
