@@ -127,7 +127,7 @@
             <div class="portfolio-item  text-center b-g" ng-style="{'background-image': 'url({{ item.image }})'}">
               <h1>{{ item.title }}</h1>
               <h3>{{ item.category }}</h3>
-              <h5><a href="{{ item.website }}">Visit Website</a></h5>
+              <a class="btn btn-default btn-sm" href="{{ item.website }}">Visit Website</a>
             </div>
           </div>
         </div>
@@ -145,9 +145,7 @@
             <div ng-repeat="job in experience" class="col-md-12" style="margin-top: 35px;">
               <div class="media">
                 <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" data-src="{{ job.logo }}" alt="{{ job.company }}" src="" data-holder-rendered="true" style="width: auto; height: 64px;">
-                  </a>
+                  <img ng-show="job.logo" class="media-object" data-src="{{ job.logo }}" alt="{{ job.company }}" src="" data-holder-rendered="true" style="width: auto; height: 64px;">
                 </div>
                 <div class="media-body">
                   <h4 class="media-heading"><strong>{{ job.company }}</strong> - <span style="color: #c2c2c2">{{ job.position }}</span></h4>
