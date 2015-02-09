@@ -36,6 +36,10 @@ $(document).ready(function() {
   $('#intro').parallax({imageSrc: './img/bg.jpg', speed: 0.4, position: '-50', bleed: 30});
   $('.intro-items').addClass('animated fadeIn');
 
+  $(".dismiss").on('click', function(e) {
+    $('.alert').addClass('hidden');
+  })
+
   $(".form").on('click', function(e) {
     e.preventDefault()
     $('#myModal').modal();
