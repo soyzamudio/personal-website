@@ -44,7 +44,7 @@ $(document).ready(function() {
   $(".sendForm").on('click', function() {
     var email = {key: "DV6iDBf0ZF_bcscqfJalXw",
                  message: {from_email: $('#inputEmail').val(),
-                           to: 'All'[{email: "jose@josezamudio.me",
+                           to: [{email: "jose@josezamudio.me",
                                  type: "to" }],
                            autotext: "true",
                            html: '<div>Name: ' + $('#inputName').val() + '</div><div>Website: ' + $('#inputWebsite').val() + '</div><div>Message: ' + $('#inputMessage').val() + '</div>'}
