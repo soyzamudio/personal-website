@@ -8,15 +8,22 @@ a:hover {
   color: #7b6771;
 }
 
-.navbar-default .navbar-nav>.active>a {
+.navbar-default .navbar-nav>.hire-me {
   background-color: #7b6771;
   color: #fff;
 }
 
-.navbar-default .navbar-nav>.active>a:hover {
-  background-color: #7b6771;
+.navbar-default .navbar-nav>.hire-me>a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav>.hire-me>a:hover {
   color: #c2c2c2;
   cursor: pointer;
+}
+
+.navbar-default .navbar-nav>.hire-me>a:focus {
+  color: #c2c2c2;
 }
 
 #intro {
@@ -286,4 +293,10 @@ a:hover {
 
 #blog .tag a {
   color: #fff;
+}
+
+@media(max-width: 700px) {
+  #blog .tag {
+    display: none;
+  }
 }
