@@ -2,6 +2,14 @@ var jz = angular.module("jZamudio", []);
 
 jz.controller("ZamudioController", ['$scope', function($scope) {
 
+  $scope.social = [
+    { link: 'mailto:jose@josezamudio.me', icon: 'fa-envelope-o' },
+    { link: 'http://twitter.com/soyzamudio', icon: 'fa-twitter' },
+    { link: 'http://github.com/soyzamudio', icon: 'fa-github' },
+    { link: 'http://linkedin.com/in/josezamudio', icon: 'fa-linkedin' },
+    { link: 'http://stackoverflow.com/users/3314997/jose-zamudio', icon: 'fa-stack-overflow' }
+  ];
+
   $scope.portfolio = [
     { title: "CarWise", category: "iOS", website: "http://www.carwise.me", image: "img/carwise-app.jpg" },
     { title: "AirTym", category: "iOS, Web", website: "http://www.airtym.co", image: "img/airtym-app.jpg" },
