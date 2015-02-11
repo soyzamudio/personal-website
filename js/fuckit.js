@@ -13,7 +13,8 @@ jz.controller("ZamudioController", ['$scope', function($scope) {
   $scope.portfolio = [
     { title: "CarWise", category: "iOS", website: "http://www.carwise.me", image: "img/carwise-app.jpg" },
     { title: "AirTym", category: "iOS, Web", website: "http://www.airtym.co", image: "img/airtym-app.jpg" },
-    { title: "TweeterBoard", category: "Web", website: "http://tweeterboard.herokuapp.com/", image: "img/tweeterboard-app.jpg" }
+    { title: "TweeterBoard", category: "Web", website: "http://tweeterboard.herokuapp.com/", image: "img/tweeterboard-app.jpg" },
+    { title: "iOS Calculator", category: "Web", website: "https://github.com/soyzamudio/iOS-Calculator-Javascript/", image: "" }
   ];
 
   $scope.experience = [
