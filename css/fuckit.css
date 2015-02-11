@@ -8,20 +8,25 @@ a:hover {
   color: #7b6771;
 }
 
-.navbar-default .navbar-nav>.active>a {
+.navbar-default .navbar-nav>.hire-me {
   background-color: #7b6771;
   color: #fff;
 }
 
-.navbar-default .navbar-nav>.active>a:hover {
-  background-color: #7b6771;
+.navbar-default .navbar-nav>.hire-me>a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav>.hire-me>a:hover {
   color: #c2c2c2;
   cursor: pointer;
 }
 
-#intro {
-
+.navbar-default .navbar-nav>.hire-me>a:focus {
+  color: #c2c2c2;
 }
+
+#intro { }
 
 .name-bar {
   margin-top: 30%;
@@ -116,39 +121,76 @@ a:hover {
 }
 
 #portfolio .square {
+  cursor: pointer;
   margin-top: .5%;
   margin-bottom: .5%;
   padding-right: .5%;
-  padding-left: .5%
+  padding-left: .5%;
+
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+}
+
+#portfolio .square:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s; /* Safari */
+  z-index: 1;
 }
 
 #portfolio .portfolio-item {
+  border-radius: 5px;
   color: #fff;
   background: #000;
   padding: 20%;
-  background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url();
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+/*
+#portfolio .portfolio-item:hover {
+  opacity: 1.0;
+}
+*/
+
 #portfolio .portfolio-item h1 {
+  padding-top: 10px;
+  margin: 0px;
+  background: rgba(0,0,0,.4);
   font-size: 1.5em;
 }
 
 #portfolio .portfolio-item h3 {
+  margin: 0px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  background: rgba(0,0,0,.4);
   font-size: 1.2em;
+  margin-bottom: 15px;
 }
 
-#portfolio .portfolio-item h5 {
-  font-size: 1em;
+#portfolio .portfolio-item h5 a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#portfolio .portfolio-item h5 a:hover {
+  color: #c2c2c2;
 }
 
 #experience {
   background: #fff;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #experience .title-header {
@@ -192,9 +234,18 @@ a:hover {
   border: 1px solid #fff;
 }
 
+#ad a {
+  color: #777;
+}
+
+#ad a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 #blog {
   background: #fff;
-  margin-bottom: 5%;
+  padding-bottom: 4%;
 }
 
 #blog .title-header {
@@ -210,6 +261,35 @@ a:hover {
   font-size: 1.4em;
   color: #c2c2c2;
   margin-top: 5px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #e0e0e0;
+}
+
+#blog p {
+  margin-bottom: 15px;
+}
+
+#blog .tag {
+  background: #337ab7;
+  padding: 3px 5px;
+  margin-right: 3px;
+  border-radius: 5px;
+  font-size: .9em;
+  cursor: pointer;
+}
+
+#blog .fa-circle {
+  color: #fff;
+  font-size: .55em;
+  margin-right: 2px;
+}
+
+#blog .tag a {
+  color: #fff;
+}
+
+@media(max-width: 700px) {
+  #blog .tag {
+    display: none;
+  }
 }
