@@ -136,9 +136,9 @@ a:hover {
 
 #portfolio .square:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.03, 1.03);
+  -ms-transform: scale(1.03, 1.03);
+  transform: scale(1.03, 1.03);
   transition-duration: 0.1s;
   -webkit-transition-duration: 0.1s; /* Safari */
   z-index: 1;
@@ -155,12 +155,6 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-
-/*
-#portfolio .portfolio-item:hover {
-  opacity: 1.0;
-}
-*/
 
 #portfolio .portfolio-item h1 {
   padding-top: 10px;
