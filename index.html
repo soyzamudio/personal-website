@@ -177,13 +177,13 @@
       <div class="col-md-3"></div><div class="col-md-6 text-center title-header"><h1>Blog</h1><h3>What have I said!?</h3></div><div class="col-md-3"></div>
       <div class="container">
         <div class="row">
-          <div class="col-md-6" ng-repeat="post in blog" style="margin-top: 4%;">
+          <div class="col-md-12" ng-repeat="post in blog" style="margin-top: 4%;">
             <h1><a href="http://blog.josezamudio.me/{{ post.link }}" target="_blank">{{ post.title }}</a></h1>
             <p><a href="mailto:{{ post.author.email }}">{{ post.author.name }}</a> - <span style="color: #c2c2c2;">{{ post.date }}</span></p>
             <p>
               {{ post.body }} <span style="font-size: 1.2em;"><strong><a href="http://blog.josezamudio.me/{{ post.link }}" target="_blank"> Read more...</a></strong></span>
             </p>
-            <span ng-repeat="tag in post.tags" class="tag">&nbsp;<i class="fa fa-circle"></i> <a href="http://blog.josezamudio.me/tag/{{tag}}" target="_blank"> {{ tag }}</a> </span>
+            <span ng-repeat="tag in post.tags" class="tag"><a href="http://blog.josezamudio.me/tag/{{tag}}" target="_blank"> {{ tag }}</a></span>
           </div>
         </div>
       </div>
