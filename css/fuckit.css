@@ -205,6 +205,13 @@ a:hover {
 #skills img {
   height: 40px;
   width: auto;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+#skills img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 #experience {
