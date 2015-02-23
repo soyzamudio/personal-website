@@ -15,7 +15,8 @@ jz.controller("ZamudioController", ['$scope', function($scope) {
     { title: "AirTym", category: "iOS, Web", website: "http://www.airtym.co", image: "img/airtym-app.jpg" },
     { title: "TweeterBoard", category: "Web", website: "http://tweeterboard.herokuapp.com/", image: "img/tweeterboard-app.jpg" },
     { title: "iOS Calculator", category: "Web", website: "https://soyzamudio.github.io/iOS-Calculator-Javascript/", image: "" },
-    { title: 'Weather App', category: 'Web', website: 'http://soyzamudio.github.io/weather-app/', image: ''}
+    { title: 'Weather App', category: 'Web', website: 'http://soyzamudio.github.io/weather-app/', image: 'img/weather-app.jpg'},
+    { title: 'Hstl.', category: 'Web', website: 'http://hstl.herokuapp.com', image: 'img/hstl-app.jpg'}
   ];
 
   $scope.experience = [
@@ -28,8 +29,8 @@ jz.controller("ZamudioController", ['$scope', function($scope) {
 
   $scope.blog = [
     { title: 'APIs made easy', body: "For the past week or two we have been working a lot with APIs. We have used the Twitter API, the Facebook API, the Weather Underground API and many others. From what I've learned APIs are one of the most important concepts in the web development industry. But first let…", author: $scope.author, tags: ['Programming', 'Javascript', 'API', 'Callbacks'], link: 'apis-made-easy/', date: '16 Feb 2015' },
-    { title: 'Hackathon 101', body: 'Two weeks into our coding bootcamp at codinghouse we decided to attend our first hackathon. We registered to attend @developerweek as our first hackathon experience. We are beginners in this industry but we took it as a way to get more experience and network with recruiters that attend the event…', author: $scope.author, tags: ['Programming', 'Coding', 'Hackathon', 'Developer Week', 'Tips', 'Hacking'], link: 'hackathon-101/', date: '08 Feb 2015' },
-    { title: 'Installing Ghost.', body: 'I have been working on my new blog design for the past three days using Ghost, a Node.js blogging platform, and yesterday I got stuck trying to upload it to Heroku. I went to all of the process of modifying the config.js with all of my server settings…', author: $scope.author, tags: ['Node-js', 'Ghost', 'Heroku', 'Terminal', 'Command Line Interface', 'Coding House', 'Javascript', 'HTML', 'CSS'], link: 'installing-ghost/', date: '30 Jan 2015' }
+    { title: 'Hackathon 101', body: 'Two weeks into our coding bootcamp at codinghouse we decided to attend our first hackathon. We registered to attend @developerweek as our first hackathon experience. We are beginners in this industry but we took it as a way to get more experience and network with recruiters that attend the event…', author: $scope.author, tags: ['Programming', 'Coding', 'Hackathon', 'Developer-Week', 'Tips', 'Hacking'], link: 'hackathon-101/', date: '08 Feb 2015' },
+    { title: 'Installing Ghost.', body: 'I have been working on my new blog design for the past three days using Ghost, a Node.js blogging platform, and yesterday I got stuck trying to upload it to Heroku. I went to all of the process of modifying the config.js with all of my server settings…', author: $scope.author, tags: ['Node-js', 'Ghost', 'Heroku', 'Terminal', 'Command-Line-Interface', 'Coding-House', 'Javascript', 'HTML', 'CSS'], link: 'installing-ghost/', date: '30 Jan 2015' }
   ];
 
   $scope.name = "Stranger";
