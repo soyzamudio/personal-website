@@ -265,8 +265,9 @@ a:hover {
 
 #blog .tag {
   background: #337ab7;
-  padding: 3px 5px;
+  padding: 2px 3px;
   margin-right: 3px;
+  margin-bottom: 5px !important;
   border-radius: 5px;
   font-size: .9em;
   cursor: pointer;
