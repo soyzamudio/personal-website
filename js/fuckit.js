@@ -19,6 +19,16 @@ jz.controller("ZamudioController", ['$scope', function($scope) {
     { title: 'Hstl.', category: 'Web', website: 'http://hstl.herokuapp.com', image: 'img/hstl-app.jpg'}
   ];
 
+  $scope.skills = [
+    { title: 'HTML 5', image: 'img/html.png' },
+    { title: 'CSS 3', image: 'img/css.png' },
+    { title: 'Javascript', image: 'img/javascript.jpg' },
+    { title: 'MongoDB', image: "img/mongodb.png" },
+    { title: 'ExpressJS', image: "img/express.png" },
+    { title: 'AngularJS', image: "img/angular.png" },
+    { title: 'NodeJS', image: "img/node.png" }
+  ]
+
   $scope.experience = [
     { company: 'Freelance', position: 'Full Stack Web Developer', description: 'Web development using the latest technologies such as Node.js/Express.js and Ruby on Rails. Create iOS applications using the new Apple language: Swift.', logo: '' },
     { company: 'AirTym', position: 'Co-Founder & Developer', description: 'Responsible for designing the website as well as the mockups for the mobile application. Helped with the development of the iOS prototype using Swift. Responsible for finding a partner for the CTO position.', logo: 'img/airtym.png' },

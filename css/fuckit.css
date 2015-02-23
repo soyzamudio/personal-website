@@ -181,6 +181,32 @@ a:hover {
   color: #c2c2c2;
 }
 
+#skills {
+  margin-top: 5%;
+  background:#f0f0f0;
+  color: #555;
+  padding: 55px 0px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#skills ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: inline;
+}
+
+#skills .logos {
+  display: inline;
+  margin-right: 50px;
+}
+
+#skills img {
+  height: 40px;
+  width: auto;
+}
+
 #experience {
   background: #fff;
   padding-top: 5%;
