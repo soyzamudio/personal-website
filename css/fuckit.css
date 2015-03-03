@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #7b6771;
 }
 
@@ -181,6 +181,39 @@ a:hover {
   color: #c2c2c2;
 }
 
+#skills {
+  margin-top: 5%;
+  background:#f0f0f0;
+  color: #555;
+  padding: 55px 0px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#skills ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: inline;
+}
+
+#skills .logos {
+  display: inline;
+  margin-right: 50px;
+}
+
+#skills img {
+  height: 40px;
+  width: auto;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+#skills img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
 #experience {
   background: #fff;
   padding-top: 5%;
@@ -265,8 +298,9 @@ a:hover {
 
 #blog .tag {
   background: #337ab7;
-  padding: 3px 5px;
+  padding: 2px 5px;
   margin-right: 3px;
+  margin-bottom: 5px !important;
   border-radius: 5px;
   font-size: .9em;
   cursor: pointer;

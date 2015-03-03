@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/fuckit.css">
-
+  <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -100,7 +100,7 @@
               <h4>Full Stack Web Developer</h4>
             </div>
             <div class="col-md-12 text-center intro-social">
-              <a ng-repeat="link in social" href="{{ link.link }}"><span class="fa {{ link.icon }}"></span></a>
+              <a ng-repeat="link in social" href="{{ link.link }}" target="_blank"><span class="fa {{ link.icon }}"></span></a>
             </div>
           </div>
           <div class="col-md-3"></div>
@@ -123,13 +123,26 @@
             <div class="portfolio-item  text-center b-g" ng-style="{'background-image': 'url({{ item.image }})'}">
               <h1>{{ item.title }}</h1>
               <h3>{{ item.category }}</h3>
-              <a class="btn btn-default btn-sm" href="{{ item.website }}">Visit Website</a>
+              <a class="btn btn-default btn-sm" href="{{ item.website }}" target="_blank">Visit Website</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="skills">
+      <div class="container">
+        <div class="row text-center">
+          <div class='col-md-12'>
+            <ul>
+              <li ng-repeat='skill in skills' class='logos'>
+                <img src='{{ skill.image }}' alt='{{ skill.title }}'>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="experience">
       <div class="container">
@@ -178,12 +191,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12" ng-repeat="post in blog" style="margin-top: 4%;">
-            <h1><a href="http://blog.josezamudio.me/{{ post.link }}">{{ post.title }}</a></h1>
+            <h1><a href="http://blog.josezamudio.me/{{ post.link }}" target="_blank">{{ post.title }}</a></h1>
             <p><a href="mailto:{{ post.author.email }}">{{ post.author.name }}</a> - <span style="color: #c2c2c2;">{{ post.date }}</span></p>
             <p>
-              {{ post.body }} <span style="font-size: 1.2em;"><strong><a href="http://blog.josezamudio.me/{{ post.link }}"> Read more...</a></strong></span>
+              {{ post.body }} <span style="font-size: 1.2em;"><strong><a href="http://blog.josezamudio.me/{{ post.link }}" target="_blank"> Read more...</a></strong></span>
             </p>
-            <p><span ng-repeat="tag in post.tags" class="tag">&nbsp;<i class="fa fa-circle"></i> <a href="http://blog.josezamudio.me/tag/{{tag}}"> {{ tag }}</a> </span></p>
+            <span ng-repeat="tag in post.tags" class="tag"><a href="http://blog.josezamudio.me/tag/{{tag}}" target="_blank"> {{ tag }}</a></span>
           </div>
         </div>
       </div>
@@ -201,7 +214,7 @@
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-59523763-1', 'auto');
       ga('send', 'pageview');
