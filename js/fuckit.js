@@ -24,7 +24,7 @@ jz.controller("ZamudioController", ['$scope', function($scope) {
     { title: 'CSS 3', image: 'img/css.png' },
     { title: 'Javascript', image: 'img/javascript.jpg' },
     { title: 'MongoDB', image: "img/mongodb.png" },
-    { title: 'ExpressJS', image: "img/express.png" },
+    { title: 'HapiJS', image: "img/hapi.png" },
     { title: 'AngularJS', image: "img/angular.png" },
     { title: 'NodeJS', image: "img/node.png" }
   ]
