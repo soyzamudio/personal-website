@@ -59,11 +59,15 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center animated fadeInUp">
-            <span class="name">Jose Zamudio</span>
+            <span class="name">José Zamudio</span>
             <hr>
             <div class="subtitle">
               <div>Full Stack Developer - Coding, Thoughts, Stories, and Ideas.</div>
               <div>I love to work with <span class="txt-rotate" data-period="1000" data-rotate='[ "Node.", "Hapi.", "JavaScript.", "Angular.", "Mongo." ]'></span></div>
+            </div>
+            <div class="buttons">
+              <a class="button" href='http://github.com/soyzamudio' target='_blank'><span class="icon ion-social-github"></span> Github</a>
+              <a class="button portfolio-scroll"><span class="icon ion-laptop"></span> Portfolio</a>
             </div>
           </div>
         </div>
@@ -80,12 +84,12 @@
           <div class="col-md-12">
             <div id="posts">
               <div class='post sport' ng-repeat='item in portfolio | filter:{ category:filter}'>
-                  <img src='{{item.image}}'>
-                  <div class='post-content'>
-                    <h2>{{item.title}}</h2>
-                    <p>{{item.techs}}</p>
-                    <a href="{{item.website}}" target='_blank'>View more</a>
-                  </div>
+                <img src='{{item.image}}'>
+                <div class='post-content'>
+                  <h2>{{item.title}}</h2>
+                  <p>{{item.techs}}</p>
+                  <a href="{{item.website}}" target='_blank'>View more</a>
+                </div>
               </div>
             </div>
           </div>
