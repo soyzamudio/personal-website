@@ -330,6 +330,10 @@ a:hover {
 }
 
 @media(max-width: 700px) {
+  .navbar {
+    background: #fff;
+    border: 1px solid #ddd;
+  }
   #blog .tag {
     display: none;
   }
