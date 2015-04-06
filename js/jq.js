@@ -35,17 +35,18 @@ $(document).ready(function() {
       scrollTop: $("#blog").offset().top}, 'slow');
   });
 
+  $(".contact-scroll").click(function(e) {
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: $("#contact").offset().top}, 'slow');
+  });
+
   $('#intro').parallax({imageSrc: './img/bg.jpg', speed: 0.4, position: '-50', bleed: 30});
   $('.intro-items').addClass('animated fadeIn');
 
   $(".dismiss").on('click', function(e) {
     $('.alert').addClass('hidden');
   })
-
-  $(".form").on('click', function(e) {
-    e.preventDefault()
-    $('#myModal').modal();
-  });
 
   $(".sendForm").on('click', function() {
     var email = {key: "DV6iDBf0ZF_bcscqfJalXw",

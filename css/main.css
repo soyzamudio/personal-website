@@ -240,7 +240,6 @@ a:hover {
 
 #blog {
   background: #fff;
-  padding-bottom: 4%;
 }
 
 #blog .title-header {
@@ -284,8 +283,58 @@ a:hover {
   color: #fff;
 }
 
+#contact {
+  background: #fff;
+  padding-bottom: 4%;
+}
+
+#contact .title-header {
+  margin-top: 5%;
+}
+
+#contact .title-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+#contact .title-header h3 {
+  font-size: 1.4em;
+  color: #c2c2c2;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#contact input {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#contact textarea {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#contact button {
+  background: transparent;
+  border: 1px solid #7b6771;
+  color: #7b6771;
+}
+
+#contact button:hover {
+  background: #7b6771;
+  color: #fff;
+}
+
 @media(max-width: 700px) {
   #blog .tag {
+    display: none;
+  }
+  #skills {
     display: none;
   }
 }

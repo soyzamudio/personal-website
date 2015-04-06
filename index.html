@@ -23,29 +23,6 @@
 </head>
   <body ng-cloak ng-app="jZamudio" ng-controller="ZamudioController">
 
-    <!-- <form>
-      <div class="form-group">
-        <label for="inputName">Full Name</label>
-        <input type="text" class="form-control" id="inputName" placeholder="Enter full name" required>
-      </div>
-      <div class="form-group">
-        <label for="inputEmail">Email address</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" required>
-      </div>
-      <div class="form-group">
-        <label for="inputWebsite">Website</label>
-        <input type="text" class="form-control" id="inputWebsite" value="http://" placeholder="Enter website">
-      </div>
-      <div class="form-group">
-        <label for="inputMessage">Message</label>
-        <textarea type="email" class="form-control" id="inputMessage" placeholder="Enter message" required></textarea>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default dismiss" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary sendForm">Send</button>
-      </div>
-    </form> -->
-
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -56,7 +33,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#" style='margin-top: -8px;'><img src="img/zlogo.png" alt="Jose Zamudio"></a>
+          <a class="navbar-brand intro-scroll" href="#" style='margin-top: -8px;'><img src="img/zlogo.png" alt="Jose Zamudio"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,7 +42,8 @@
             <li><a href="#" class="intro-scroll">Home</a></li>
             <li><a href="#" class="portfolio-scroll">Projects</a></li>
             <li><a href="#" class="experience-scroll">Experience</a></li>
-            <li><a href="" class="blog-scroll">Blog</a></li>
+            <li><a href="#" class="blog-scroll">Blog</a></li>
+            <li><a href="#" class='contact-scroll'>Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -158,7 +136,7 @@
       <div class="container">
         <div class="row text-center">
           <h1>I'm currently available for freelance work.</h1>
-          <a class="form" href=""><button><span class="fa fa-check"></span> HIRE ME</button></a>
+          <a class="form contact-scroll" href=""><button><span class="fa fa-check"></span> HIRE ME</button></a>
         </div>
       </div>
     </section>
@@ -175,6 +153,33 @@
               {{ post.body }} <span style="font-size: 1.2em;"><strong><a href="http://blog.josezamudio.me/{{ post.link }}" target="_blank"> Read more...</a></strong></span>
             </p>
             <span ng-repeat="tag in post.tags" class="tag"><a href="http://blog.josezamudio.me/tag/{{tag}}" target="_blank"> {{ tag }}</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id='contact'>
+      <div class="col-md-3"></div><div class="col-md-6 text-center title-header"><h1>Contact Me</h1><h3>Where can I find you!?</h3></div><div class="col-md-3"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <form style='padding: 5%;'>
+              <div class="form-group">
+                <input type="text" class="form-control" id="inputName" placeholder="Enter full name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="inputWebsite" placeholder="http://">
+              </div>
+              <div class="form-group">
+                <textarea type="email" class="form-control" id="inputMessage" placeholder="Enter message" required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary form-control sendForm">Send</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
