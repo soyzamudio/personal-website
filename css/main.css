@@ -14,17 +14,16 @@ a:hover {
   padding: 5px;
 }
 
+.navbar .icon {
+  font-size: 1.5em;
+}
+
 .navbar-default .navbar-nav>li>a {
   color: #fff;
 }
 
-.navbar-default .navbar-nav>.hire-me>a:hover {
-  color: #c2c2c2;
-  cursor: pointer;
-}
-
-.navbar-default .navbar-nav>.hire-me>a:focus {
-  color: #c2c2c2;
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus  {
+  color: #ddd;
 }
 
 #intro { padding: 15% 0px 20%; background: rgba(0,0,0,.5); }
