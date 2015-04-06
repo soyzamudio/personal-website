@@ -70,22 +70,23 @@
       </div>
     </section>
 
-    <section id="portfolio">
+    <section id="profile">
       <div class="col-md-12 text-center profile-pic"><img src="img/profile-pic.jpg" alt="Jose Zamudio being awesome as usual..." class="img-circle"></div>
-      <div class="col-md-3"></div><div class="col-md-6 text-center title-header"><h1>Projects</h1><h3>What have I done!?</h3></div><div class="col-md-3"></div>
-      <div class="col-md-12 text-center portfolio-options">
-        <button class="btn btn-default btn-sm" ng-click="filterByAll()" ng-class="btn-primary">All</button>
-        <button class="btn btn-default btn-sm" ng-click="filterByWeb()">Web</button>
-        <button class="btn btn-default btn-sm" ng-click="filterByiOS()">iOS</button>
-        <button class="btn btn-default btn-sm" ng-click="filterByAndroid()">Android</button>
-      </div>
+    </section>
+
+    <section id="portfolio">
       <div class="container">
-        <div class="row" >
-          <div ng-repeat="item in portfolio | filter:{ category:filter}" class="col-md-3 square">
-            <div class="portfolio-item  text-center b-g" ng-style="{'background-image': 'url({{ item.image }})'}">
-              <h1>{{ item.title }}</h1>
-              <h3>{{ item.category }}</h3>
-              <a class="btn btn-default btn-sm" href="{{ item.website }}" target="_blank">Visit Website</a>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="posts">
+              <div class='post sport' ng-repeat='item in portfolio | filter:{ category:filter}'>
+                <img src='{{item.image}}'>
+                <div class='post-content'>
+                  <h2>{{item.title}}</h2>
+                  <p>{{item.techs}}</p>
+                  <a href="#">View more</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
