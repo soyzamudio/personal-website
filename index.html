@@ -80,12 +80,12 @@
           <div class="col-md-12">
             <div id="posts">
               <div class='post sport' ng-repeat='item in portfolio | filter:{ category:filter}'>
-                <img src='{{item.image}}'>
-                <div class='post-content'>
-                  <h2>{{item.title}}</h2>
-                  <p>{{item.techs}}</p>
-                  <a href="#">View more</a>
-                </div>
+                  <img src='{{item.image}}'>
+                  <div class='post-content'>
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.techs}}</p>
+                    <a href="{{item.website}}" target='_blank'>View more</a>
+                  </div>
               </div>
             </div>
           </div>
