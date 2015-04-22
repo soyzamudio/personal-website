@@ -12,6 +12,7 @@ jz.controller("ZamudioController", ['$scope', function($scope) {
 
   $scope.portfolio = [
     { title: 'Scrimmagr', category: 'Android, iOS', website: 'http://scrimmagr.me', image: 'img/scrimmagr-app.jpg', techs: 'JavaScript Ionic Angular.js Firebase Polymer'},
+    { title: "Ecco", category: "Web", website: "http://www.eccoapp.club", image: "img/ecco-app.jpg", techs: 'Node.js Express.js Angular.js MongoDB'},
     { title: "CarWise", category: "iOS", website: "http://www.carwise.me", image: "img/carwise-app.jpg", techs: 'Objective-C Swift Cocoapods Parse.com'},
     { title: "AirTym", category: "iOS, Web", website: "http://www.airtym.co", image: "img/airtym-app.jpg", techs: 'Objective-C Swift Cocoapods JavaScript HTML/CSS'},
     { title: "TweeterBoard", category: "Web", website: "http://tweeterboard.herokuapp.com/", image: "img/tweeterboard-app.jpg", techs: 'JavaScript jQuery Twitter API HTML/CSS'},
