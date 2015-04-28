@@ -12,6 +12,7 @@ a:hover {
   background: transparent;
   border: none;
   padding: 5px;
+  box-shadow: none;
 }
 
 .navbar .icon {

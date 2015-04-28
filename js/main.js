@@ -11,17 +11,17 @@ jz.controller("ZamudioController", ['$scope', function($scope) {
   ];
 
   $scope.portfolio = [
-    { title: 'Scrimmagr', category: 'Android, iOS', website: 'http://scrimmagr.me', image: 'img/scrimmagr-app.jpg', techs: 'JavaScript Ionic Angular.js Firebase Polymer'},
-    { title: "Ecco", category: "Web", website: "http://www.eccoapp.club", image: "img/ecco-app.jpg", techs: 'Node.js Express.js Angular.js MongoDB'},
-    { title: "CarWise", category: "iOS", website: "http://www.carwise.me", image: "img/carwise-app.jpg", techs: 'Objective-C Swift Cocoapods Parse.com'},
-    { title: "AirTym", category: "iOS, Web", website: "http://www.airtym.co", image: "img/airtym-app.jpg", techs: 'Objective-C Swift Cocoapods JavaScript HTML/CSS'},
-    { title: "TweeterBoard", category: "Web", website: "http://tweeterboard.herokuapp.com/", image: "img/tweeterboard-app.jpg", techs: 'JavaScript jQuery Twitter API HTML/CSS'},
-    { title: "JavaScript Calculator", category: "Web", website: "https://soyzamudio.github.io/iOS-Calculator-Javascript/", image: "img/calc-app.jpg", techs: 'JavaScript jQuery HTML/CSS'},
-    { title: 'Weather App', category: 'Web', website: 'http://soyzamudio.github.io/weather-app/', image: 'img/weather-app.jpg', techs: 'JavaScript jQuery Angular HTML/CSS'},
-    { title: 'Hstl.', category: 'Web', website: 'http://hstl.herokuapp.com', image: 'img/hstl-app.jpg', techs: 'Node.js Angular.js Hapi.js MongoDB'},
-    { title: 'resQ', category: 'Web', website: 'http://resq-shelter.herokuapp.com/', image: 'img/resq-app.jpg', techs: 'Node.js Angular.js Hapi.js MongoDB'},
-    { title: 'Open-Market', category: 'Web', website: 'http://open-market.herokuapp.com', image: 'img/openmarket-app.jpg', techs: 'Node.js Angular.js Hapi.js MongoDB'},
-    { title: 'To Do', category: 'Web',  website: 'http://tododo-app.herokuapp.com/', image: 'img/todo-app.jpg', techs: 'Node.js Angular.js Hapi.js MongoDB'}
+    { title: 'Scrimmagr', category: 'Android, iOS', website: 'http://scrimmagr.me', image: 'img/scrimmagr-app.jpg', techs: ['JavaScript', 'Ionic', 'Angular.js', 'Firebase', 'Polymer']},
+    { title: "Ecco", category: "Web", website: "http://www.eccoapp.club", image: "img/ecco-app.jpg", techs: ['Node.js', 'Express.js', 'Angular.js', 'MongoDB']},
+    { title: "CarWise", category: "iOS", website: "http://www.carwise.me", image: "img/carwise-app.jpg", techs: ['Objective-C', 'Swift', 'Cocoapods', 'Parse.com']},
+    { title: "AirTym", category: "iOS, Web", website: "http://www.airtym.co", image: "img/airtym-app.jpg", techs: ['Objective-C', 'Swift', 'Cocoapods', 'JavaScript', 'HTML/CSS']},
+    { title: "TweeterBoard", category: "Web", website: "http://tweeterboard.herokuapp.com/", image: "img/tweeterboard-app.jpg", techs: ['JavaScript', 'jQuery', 'Twitter', 'API', 'HTML/CSS']},
+    { title: "JavaScript Calculator", category: "Web", website: "https://soyzamudio.github.io/iOS-Calculator-Javascript/", image: "img/calc-app.jpg", techs: ['JavaScript', 'jQuery', 'HTML/CSS']},
+    { title: 'Weather App', category: 'Web', website: 'http://soyzamudio.github.io/weather-app/', image: 'img/weather-app.jpg', techs: ['JavaScript', 'jQuery', 'Angular', 'HTML/CSS']},
+    { title: 'Hstl.', category: 'Web', website: 'http://hstl.herokuapp.com', image: 'img/hstl-app.jpg', techs: ['Node.js', 'Angular.js', 'Hapi.js', 'MongoDB']},
+    { title: 'resQ', category: 'Web', website: 'http://resq-shelter.herokuapp.com/', image: 'img/resq-app.jpg', techs: ['Node.js', 'Angular.js', 'Hapi.js', 'MongoDB']},
+    { title: 'Open-Market', category: 'Web', website: 'http://open-market.herokuapp.com', image: 'img/openmarket-app.jpg', techs: ['Node.js', 'Angular.js', 'Hapi.js', 'MongoDB']},
+    { title: 'To Do', category: 'Web',  website: 'http://tododo-app.herokuapp.com/', image: 'img/todo-app.jpg', techs: ['Node.js', 'Angular.js', 'Hapi.js', 'MongoDB']}
   ];
 
   $scope.skills = [
