@@ -32,10 +32,11 @@ jz.controller("ZamudioController", ['$scope', function($scope) {
     { title: 'HapiJS', image: "img/hapi.png" },
     { title: 'AngularJS', image: "img/angular.png" },
     { title: 'NodeJS', image: "img/node.png" },
-    { title: 'Ionic', image: 'img/ionic.png' }
+    { title: 'CoffeeScript', image: 'img/coffeescript.png' }
   ]
 
   $scope.experience = [
+    { company: 'ShopStyle / POPSUGAR, Inc.', position: 'JavaScript Engineer', description: 'Work on ShopStyle e-commerce site. Using Angular.js and CoffeeScript as my main framework and language. Fixing bugs and adding new features to the website.', logo: 'img/popsugar.jpg' },
     { company: 'Coding House Institute', position: 'Teacher Assistant', description: 'Help students of the web development bootcamp during all day lectures. Writing articles on related topics. Tutoring students who need help 24/7.', logo: 'img/codinghouse.jpg'},
     { company: 'Freelance', position: 'Full Stack Web Developer', description: 'Web development using the latest technologies such as Node.js/Express.js and Ruby on Rails. Create iOS applications using the new Apple language: Swift.', logo: '' },
     { company: 'AirTym', position: 'Co-Founder & Developer', description: 'Responsible for designing the website as well as the mockups for the mobile application. Helped with the development of the iOS prototype using Swift. Responsible for finding a partner for the CTO position.', logo: 'img/airtym.png' },
@@ -45,9 +46,9 @@ jz.controller("ZamudioController", ['$scope', function($scope) {
   $scope.author = { name: 'Jose Zamudio', email: 'jose@josezamudio.me' };
 
   $scope.blog = [
+    { title: 'Setting Up Gulp for the First Time', body: 'Gulp.js is a Task/Build runner that makes use of pipes for streaming data that needs to be processed. So, how can Gulp.js help during the development process? There are many programming languages that have extensions that make it easier or more elegant to develop big projects. This extensions can be more powerful at development time by adding features that were not available in the original language.', author: $scope.author, tags: ['Developer', 'Javascript', 'HTML', 'CSS', 'Angular-js', 'gulp', 'task', 'coffeescript', 'jade', 'sass'], link: 'setting-up-gulp-for-the-first-time/', date: '12 June 2015'},
     { title: 'Simple Web App - Part I - Node.js', body: "In the next set of articles we are going to build a simple app using Node.js, Hapi.js, Angular.js and MongoDB. What is Node.js? The quick answer: Node is Javascript on the server. Node.js works on a v8 environment, which is what Google uses as the…", author: $scope.author, tags: ['Node-js', 'MongoDB', 'Hapi-js', 'Angular-js', 'Web', 'App'], link: 'simple-web-app-part-i-node-js/', date: '02 Mar 2015' },
     { title: 'APIs made easy', body: "For the past week or two we have been working a lot with APIs. We have used the Twitter API, the Facebook API, the Weather Underground API and many others. From what I've learned APIs are one of the most important concepts in the web development industry. But first let…", author: $scope.author, tags: ['Programming', 'Javascript', 'API', 'Callbacks'], link: 'apis-made-easy/', date: '16 Feb 2015' },
-    { title: 'Hackathon 101', body: 'Two weeks into our coding bootcamp at codinghouse we decided to attend our first hackathon. We registered to attend @developerweek as our first hackathon experience. We are beginners in this industry but we took it as a way to get more experience and network with recruiters that attend the event…', author: $scope.author, tags: ['Programming', 'Coding', 'Hackathon', 'Developer-Week', 'Tips', 'Hacking'], link: 'hackathon-101/', date: '08 Feb 2015' }
   ];
 
   $scope.name = "Stranger";

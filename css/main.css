@@ -115,7 +115,7 @@ a:hover {
 }
 
 #skills img {
-  height: 40px;
+  height: 35px;
   width: auto;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
@@ -129,7 +129,7 @@ a:hover {
 #experience {
   background: #fff;
   padding-top: 5%;
-  padding-bottom: 5%;
+  /*padding-bottom: 5%;*/
 }
 
 #experience .title-header {
