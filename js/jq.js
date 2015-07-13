@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 700) {
+    if ($(this).scrollTop() > 640) {
       $('.navbar').css('background', '#fff');
       $('.navbar-default .navbar-nav>li>a').css('color', '#222');
       $('.navbar').css('border-bottom', '1px solid #ddd');

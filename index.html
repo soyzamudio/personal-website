@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jose Zamudio | Full Stack Web Developer</title>
   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -59,34 +60,55 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center animated fadeInUp">
-            <span class="name">Jose Zamudio</span>
+            <span class="name">José Zamudio</span>
             <hr>
             <div class="subtitle">
               <div>Full Stack Developer - Coding, Thoughts, Stories, and Ideas.</div>
               <div>I love to work with <span class="txt-rotate" data-period="1000" data-rotate='[ "Node.", "Hapi.", "JavaScript.", "Angular.", "Mongo." ]'></span></div>
+            </div>
+            <div class="buttons">
+              <a class="button" href='http://github.com/soyzamudio' target='_blank'><span class="icon ion-social-github"></span> Github</a>
+              <a class="button portfolio-scroll"><span class="icon ion-laptop"></span> Portfolio</a>
+              <a class="button" href='http://josezamudio.me/assets/resume.pdf'><span class="icon ion-code-working"></span> Resume</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="portfolio">
+    <section id="profile">
       <div class="col-md-12 text-center profile-pic"><img src="img/profile-pic.jpg" alt="Jose Zamudio being awesome as usual..." class="img-circle"></div>
-      <div class="col-md-3"></div><div class="col-md-6 text-center title-header"><h1>Projects</h1><h3>What have I done!?</h3></div><div class="col-md-3"></div>
-      <div class="col-md-12 text-center portfolio-options">
-        <button class="btn btn-default btn-sm" ng-click="filterByAll()" ng-class="btn-primary">All</button>
-        <button class="btn btn-default btn-sm" ng-click="filterByWeb()">Web</button>
-        <button class="btn btn-default btn-sm" ng-click="filterByiOS()">iOS</button>
-        <button class="btn btn-default btn-sm" ng-click="filterByAndroid()">Android</button>
-      </div>
+    </section>
+
+    <section id="portfolio">
       <div class="container">
-        <div class="row" >
-          <div ng-repeat="item in portfolio | filter:{ category:filter}" class="col-md-3 square">
-            <div class="portfolio-item  text-center b-g" ng-style="{'background-image': 'url({{ item.image }})'}">
-              <h1>{{ item.title }}</h1>
-              <h3>{{ item.category }}</h3>
-              <a class="btn btn-default btn-sm" href="{{ item.website }}" target="_blank">Visit Website</a>
+        <div class="row">
+          <div class="col-md-4" ng-repeat='item in portfolio | filter:{ category:filter}'>
+
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="{{item.image}}">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{item.title}} <i class="mdi-navigation-more-vert right"></i></span>
+                <p><a href="{{item.website}}" target='_blank'>Visit Website/Github</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{item.title}}<i class="mdi-navigation-close right"></i></span>
+                <span class="card-title grey-text text-darken-2" style='font-size: 1.4em'>Technologies</span>
+                <h6 ng-repeat='tech in item.techs'>{{tech}}</h6>
+              </div>
             </div>
+<!--             <div id="posts">
+  <div class='post sport' ng-repeat='item in portfolio | filter:{ category:filter}'>
+    <img src='{{item.image}}'>
+    <div class='post-content'>
+      <h2>{{item.title}}</h2>
+      <p>{{item.techs}}</p>
+      <a href="{{item.website}}" target='_blank'>View more</a>
+    </div>
+  </div>
+</div> -->
           </div>
         </div>
       </div>
@@ -193,6 +215,7 @@
     
     <!-- Latest compiled and minified Angular.js -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jq.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
