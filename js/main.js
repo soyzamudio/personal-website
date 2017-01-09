@@ -1,4 +1,4 @@
-var jz = angular.module("jZamudio", []);
+var jz = angular.module("jZamudio", ['ngSanitize']);
 
 jz.controller("ZamudioController", ['$scope', function($scope) {
 
@@ -11,6 +11,7 @@ jz.controller("ZamudioController", ['$scope', function($scope) {
   ];
 
   $scope.portfolio = [
+    { title: 'ShopStyle', category: 'Web', website: 'https://www.shopstyle.com', image: 'img/shopstyle-app.jpg', techs: ['Angular 2', 'Angular Universal', 'Sass', 'AWS', 'Node.js', 'Angular Material 2', 'TypeScript', 'RxJS'] },
     { title: 'Scrimmagr', category: 'Android, iOS', website: 'http://scrimmagr.me', image: 'img/scrimmagr-app.jpg', techs: ['JavaScript', 'Ionic', 'Angular.js', 'Firebase', 'Polymer']},
     { title: "Ecco", category: "Web", website: "http://www.eccoapp.club", image: "img/ecco-app.jpg", techs: ['Node.js', 'Express.js', 'Angular.js', 'MongoDB']},
     { title: "CarWise", category: "iOS", website: "http://www.carwise.me", image: "img/carwise-app.jpg", techs: ['Objective-C', 'Swift', 'Cocoapods', 'Parse.com']},
@@ -28,15 +29,18 @@ jz.controller("ZamudioController", ['$scope', function($scope) {
     { title: 'HTML 5', image: 'img/html.png' },
     { title: 'CSS 3', image: 'img/css.png' },
     { title: 'Javascript', image: 'img/javascript.jpg' },
-    { title: 'MongoDB', image: "img/mongodb.png" },
-    { title: 'HapiJS', image: "img/hapi.png" },
-    { title: 'AngularJS', image: "img/angular.png" },
+    { title: 'TypeScript', image: 'img/typescript.jpg' },
+    { title: 'Angular', image: "img/angular.png" },
     { title: 'NodeJS', image: "img/node.png" },
-    { title: 'CoffeeScript', image: 'img/coffeescript.png' }
   ]
 
   $scope.experience = [
-    { company: 'ShopStyle / POPSUGAR, Inc.', position: 'JavaScript Engineer', description: 'Work on ShopStyle e-commerce site. Using Angular.js and CoffeeScript as my main framework and language. Fixing bugs and adding new features to the website.', logo: 'img/popsugar.jpg' },
+    {
+      company: 'ShopStyle / POPSUGAR, Inc.',
+      position: 'Software Engineer III',
+      description: 'Maintain and develop new features for the old site built in Angular 1 and CoffeeScript. Since November 2014 I work in the team that developed the new Checkout SDK that will be available through www.shopstyle.com, all of our blogger\'s sites, and our Android app; the SDK was built with Angular 2 and TypeScript. <br><br>Participate on the rebuild of the ShopStyle site to Angular 2 and Angular Universal, all this using TypeScript. <br><br> Other projects: <br><br><li>Build the internal rewards program site for www.shopstyle.com.</li><li>Automate internationalization.</li><li>Lead the frontend side of the Middle Eastern project for the site.</li>',
+      logo: 'img/popsugar.jpg'
+    },
     { company: 'Coding House Institute', position: 'Teacher Assistant', description: 'Help students of the web development bootcamp during all day lectures. Writing articles on related topics. Tutoring students who need help 24/7.', logo: 'img/codinghouse.jpg'},
     { company: 'Freelance', position: 'Full Stack Web Developer', description: 'Web development using the latest technologies such as Node.js/Express.js and Ruby on Rails. Create iOS applications using the new Apple language: Swift.', logo: '' },
     { company: 'AirTym', position: 'Co-Founder & Developer', description: 'Responsible for designing the website as well as the mockups for the mobile application. Helped with the development of the iOS prototype using Swift. Responsible for finding a partner for the CTO position.', logo: 'img/airtym.png' },
